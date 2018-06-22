@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<title>登录页面</title>
+      <link rel="stylesheet" href="/css/bootstrap.css" />
+</head>
+<body>
+<form action="" id="form" method="post" >
+      <label>用户名：</label><input type="text"  name="username" value="" />
+      <label>密&emsp;码：</label><input type="password"  name="password" value="" /> 
+      <input type="hidden" th:name="${_csrf.parameterName}" th:value="${_csrf.token}" />    
+      <br/>
+       <input type="submit" value="登录" />      
+</form>
+
+</body>
+</html>
